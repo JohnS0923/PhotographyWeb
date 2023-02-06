@@ -8,24 +8,36 @@ body{
 nav 
 {       
     background-color: rgb(247, 241, 241);
+    height: 175px;
+    font-size: 1em;
 }
 .container-fluid{
     
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 2em;
 
 
 }
 
+.navbar-toggler{
+    margin-left: 50%;
+}
+
+#navbarNavDropdown{
+    background-color: rgb(247, 241, 241);
+    height: auto;
+}
+
 .box {
     width: 30%;
+    
 }
 
 
 .box3{
+    visibility: hidden;
     font-size: 2em;
     text-align: right;
     padding-right: 15%;
@@ -96,4 +108,17 @@ footer{
 
 .botSocial{
     font-size: 2.5em;
+}
+
+/* responsive */
+
+
+
+
+
+@media screen and (min-width:980px) {
+
+    .box3{
+        visibility: visible;
+    }
 }
