@@ -66,6 +66,8 @@ main{
 h1,h3{
     color: black;
 }
+
+
 /* banner */
 .banner{
     height: 800px;
@@ -92,6 +94,7 @@ img{
     width: 15%;
 }
 
+
 /* footer */
 footer{
     padding-top: 20px;
@@ -110,6 +113,42 @@ footer{
     font-size: 2.5em;
 }
 
+
+
+/* portfolio page */
+
+.photoNav{
+    display: inline-flex;
+    color: black;
+}
+
+.photos{
+    margin-top: 10px;
+    color: black;
+    
+}
+
+.gallery {
+    padding-top: 2%;
+    padding-left: 30%;
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+
+ .gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
+
+ #portraits,#family,#pet,#wedding{
+    height: 170px;
+ }
 /* responsive */
 
 
