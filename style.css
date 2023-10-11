@@ -40,7 +40,6 @@ nav
     visibility: hidden;
     font-size: 2em;
     text-align: right;
-    padding-right: 15%;
     
 }
 
@@ -58,6 +57,9 @@ nav a:hover{
     color: rgb(179, 115, 115);
 }
 
+.nav-item{
+    padding-left: 10%;
+}
 /* main */
 main{
     text-align: center;
@@ -70,9 +72,13 @@ h1,h3{
 
 /* banner */
 .banner{
+    margin-top: 5%;
     height: 800px;
     background-image: url(img/river.jpg);
     margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* photos */
@@ -130,25 +136,62 @@ footer{
 
 .gallery {
     padding-top: 2%;
-    padding-left: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
     line-height:0;
-    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-count:3; /* split it into 5 columns */
     -webkit-column-gap:5px; /* give it a 5px gap between columns */
-    -moz-column-count:5;
+    -moz-column-count:3;
     -moz-column-gap:5px;
-    column-count:5;
+    column-count:3;
     column-gap:5px;
+
  }
 
- .gallery img {
+.gallery img {
     width: 100% !important;
     height: auto !important;
     margin-bottom:5px; /* to match column gap */
- }
+}
 
- #portraits,#family,#pet,#wedding{
-    height: 170px;
- }
+#portraits,#family,#pet,#wedding{
+height: 170px;
+}
+
+.contactSection{
+    margin-top: 15%;
+    text-align: center;
+}
+
+.aboutContainer {  
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px;
+}
+
+.picture { 
+    grid-area: 1 / 1 / 5 / 3;
+    z-index: 2;
+}
+
+.words { 
+    grid-area: 2 / 2 / 6 / 5;
+    background-color: bisque;
+    font-size: 40px;
+    z-index: 1;
+    color: brown;
+    padding-left: 35%;
+
+}
+
+.contactForm{
+    margin: 15%;
+    font-size: 40px;
+}
 /* responsive */
 
 
