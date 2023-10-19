@@ -49,19 +49,44 @@ nav
     color: black;
 }
 
-nav a:hover{
-    background-color: lightgray;
-}
+
 .nav-link{
     color: rgb(119, 111, 111);
 }
-.nav-link:hover{
+.nav-link:hover:not(.btn-contact){
     color: rgb(179, 115, 115);
+    background-color: lightgray;
+
 }
 .nav-item{
     padding-left: 10px;
 }
+/* logo */
+.fa-brands:hover{
+    cursor: pointer;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    background: rgb(209,29,249);
+    background: linear-gradient(216deg, rgba(209,29,249,1) 0%, rgba(236,223,76,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    
+    
+    
+}
+.fa-tiktok{
+    color: #111111;
+    filter: drop-shadow(2px 2px  #FD3E3E) drop-shadow(-2px -2px  #4DE8F4)
+}
+    
+   
 
+
+  
 /* main */
 main{
     text-align: center;
@@ -207,6 +232,8 @@ height: 170px;
 #submitBtn{
     width: 150px;
 }
+
+
 /* responsive */
 
 
